@@ -4,3 +4,20 @@
 
   display: flex;
 }
+
+.row {
+  width: 100vw;
+  height: 100vh;
+  
+  gap: 0px;
+}
+
+.column {
+  margin: 0px;
+  padding: 0px;
+}
+
+.leftBarColumn {
+  max-width: 300px;
+  min-width: 250px;
+}

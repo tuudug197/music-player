@@ -1,4 +1,6 @@
 .container {
+    width: 100%;
+    height: 100vh;
     
     display: flex;
     flex-direction: column;
@@ -8,16 +10,35 @@
 
 .bar {
     width: 100%;
-    height: 44px;
-
+    height: 64px;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba( 255, 255, 255, 0.5);
+
+    height: 52px;
+    border-radius: 24px;
+    border: solid rgba( 0, 0, 0, 0.2) 1px;
+
+    font-size: 24px;
+    
+    padding-left: 24px;
+
+    margin-left: 15px;
 }
 
 .list {
     color: #0A0908;
-    font-size: 42px;
+    font-size: 52px;
+}
 
-    position: fixed;
-
+.searchIcon{
+    color:rgba( 0, 0, 0, 0.6);
+    font-size: 38px;
+    margin-left: 10px;
 }

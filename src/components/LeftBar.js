@@ -1,6 +1,6 @@
 import styles from '../stylesheets/leftbar.module.css'
 import { X } from 'react-bootstrap-icons'
-import { useLessened } from '../providers/LessenedContext.js'
+import { useLessened } from '../providers/context.js'
 
 
 
