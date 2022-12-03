@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
 
-    background-color: #EAE0D5;
+    background-color:#5B8266;
 }
 
 .bar {
@@ -14,6 +14,12 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 20px; 
+    gap: 10px;
+    border-bottom: solid rgba( 255,255,255, 0.6) 1px;
+
+    
 }
 
 .input {
@@ -23,22 +29,20 @@
 
     height: 52px;
     border-radius: 24px;
-    border: solid rgba( 0, 0, 0, 0.2) 1px;
+    border: solid rgba( 0, 0, 0, 0.6) 1px;
 
     font-size: 24px;
     
     padding-left: 24px;
 
-    margin-left: 15px;
 }
 
 .list {
-    color: #0A0908;
+    color:rgba( 0, 0, 0, 0.6);
     font-size: 52px;
 }
 
 .searchIcon{
     color:rgba( 0, 0, 0, 0.6);
     font-size: 38px;
-    margin-left: 10px;
 }

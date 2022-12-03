@@ -3,9 +3,11 @@
     flex-direction: column;
 
     height: 100vh;
-    width: 350px;
+    min-width: 300px;
+    
 
-    background-color: #22333B;
+    background-color: #212922;
+
 }
 
 .lessened {
@@ -20,10 +22,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    border-bottom: solid rgba( 255,255,255, 0.6) 1px;
 }
 
 .x {
-    color: #FFFFFF;
+    color: rgba( 255,255,255, 0.6);
     font-size: 52px;
 
     position: fixed;

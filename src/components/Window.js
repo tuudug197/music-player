@@ -9,7 +9,6 @@ const Bar = () => {
     function toggle() {
 
         setIsLessened((prev) => prev = true)
-        console.log(isLessened)
     }
 
     return (
