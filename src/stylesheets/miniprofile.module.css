@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .username {
-    color: rgba( 255, 255, 255, 0.6);
+    color: rgba( 255, 255, 255, 1);
     font-size: 28px;
 }
 .photo {
@@ -12,4 +12,8 @@
     width: 50px;
     border-radius: 50%;
 
+}
+
+.none {
+    display: none;
 }

@@ -3,6 +3,7 @@ import { createContext, useContext, useState } from "react";
 const Lessened = createContext({});
 
 export const LessenedProvider = ({ children }) => {
+
     const [value, setValue] = useState(true)
 
     return (
@@ -19,15 +20,18 @@ export const useLessened = () => useContext(Lessened)
 
 const userAuth = createContext({})
 
-export const authProvider = ({ children }) => {
+export const AuthProvider = ({ children }) => {
+
+    const [user, setUser] = useState(0)
 
     return (
-        <userAuth.Provider value={{}}>
-
+        <userAuth.Provider value={{ user, setUser}}>
             {children}
         </userAuth.Provider>
     )
 }
+
+export const useAuth = () => useContext(userAuth)
 
 
 

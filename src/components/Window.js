@@ -3,7 +3,7 @@ import { List, Search} from 'react-bootstrap-icons'
 import { useLessened } from '../providers/context.js'
 
 const Bar = () => {
-
+    
     const { value: isLessened, setValue: setIsLessened } = useLessened()
 
     function toggle() {
