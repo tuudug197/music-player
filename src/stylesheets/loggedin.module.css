@@ -1,4 +1,4 @@
-.container {
+.miniProfile {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -16,4 +16,8 @@
 
 .none {
     display: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
 }

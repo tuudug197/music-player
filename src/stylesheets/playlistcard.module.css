@@ -1,0 +1,13 @@
+.container {
+    width: 125px;
+    height: 125px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: #AEF6C7;
+    margin: 10px;
+}
+.name{
+    color: white;
+    font-size: 14px;
+}

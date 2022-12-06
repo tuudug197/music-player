@@ -1,0 +1,13 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    align-self: center;
+    color: grey;
+    font-size: 18px;
+}
+.title:hover{
+    color: red;
+}
