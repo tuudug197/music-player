@@ -1,13 +1,27 @@
 .container {
-    width: 125px;
-    height: 125px;
+    width: 120px;
     border-radius: 0px;
     display: flex;
     flex-direction: column;
-    background-color: #AEF6C7;
+    backdrop-filter: blur(10px);
+    border: 1px solid black;
     margin: 10px;
+    padding: 5px;
 }
 .name{
-    color: white;
-    font-size: 14px;
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+.photo{
+    height: 110px;
+    width: 110px;
+    border: 1px dashed black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba( 0,0,0,0.8);
+    font-size: 48px;
+    background-color: rgba( 0,0,0,0.1);
 }

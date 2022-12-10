@@ -105,6 +105,6 @@ export const LeftBar = () => {
                 hasLoggedIn= { auth.user ? true : false}
             />
 
-        </div>
+         </div>
     )
 }

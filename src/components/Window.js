@@ -1,18 +1,23 @@
 import styles from '../stylesheets/window.module.css'
 import styles1 from '../stylesheets/playlistcard.module.css'
-import { List, Search} from 'react-bootstrap-icons'
+import { List, Search, MusicNoteList} from 'react-bootstrap-icons'
 import { useLessened } from '../providers/context.js'
 
 import { useEffect, useState } from "react";
 import axios from "axios";
-import {useAuth} from '../providers/context.js'
+import {useAuth, useTrack} from '../providers/context.js'
 
 const PlaylistCard = ( props) => {
-    console.log(props.name)
+
+    const {track} = useTrack()
+    console.log(track)
 
     return(
-        <div className={ styles1.container}>
-            <p className={ styles1.name}></p>
+        <div src="" className={ styles1.container}>
+            <div className={ styles1.photo}>
+                <MusicNoteList />
+            </div>
+            <p className={ styles1.name}>{props.name}</p>
         </div>
     )
 }
@@ -27,11 +32,9 @@ const Bar = () => {
 
     return (
         <div className={ styles.bar}>
-
             <List  className={ styles.list} onClick={ toggle}/>
             <input type="text" className={styles.input} placeholder="Disocover..." />
             <Search className={ styles.searchIcon}/>
-
         </div>
     )
 }
@@ -53,17 +56,16 @@ export const Window = () => {
 
     return (
         <div className={ styles.container}>
-            <button onClick={() => {console.log(data)}}>click here</button>
             <Bar />
             <div className={ styles.playlistsContainer}>
-               {data.forEach(element => {
+               {data.map((element, index) => {
 
                     return(
                     <PlaylistCard 
-                        name = {element.listName}
-                    >
+                        name = { element.listName}
+                        key= { index}
+                    />
 
-                    </PlaylistCard>
                     )
                    })}
             </div>

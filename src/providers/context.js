@@ -33,6 +33,22 @@ export const AuthProvider = ({ children }) => {
 
 export const useAuth = () => useContext(userAuth)
 
+//current track context 
+
+const currentTrack = createContext({})
+
+export const TrackProvider = ({ children }) => {
+
+    const [track, setTrack] = useState("hi")
+
+    return (
+        <currentTrack.Provider value={{ track, setTrack}}>
+            {children}
+        </currentTrack.Provider>
+    )
+}
+
+export const useTrack = () => useContext(currentTrack)
 
 
 

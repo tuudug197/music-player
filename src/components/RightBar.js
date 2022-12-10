@@ -4,7 +4,7 @@ export const RightBar = () => {
 
     return (
         <div className={ styles.container}>
-
+            <div className={ styles.bar}></div>
         </div>
     )
 }
